@@ -34,3 +34,5 @@ Route::resource('users', 'UsersController', ['only'=>['show', 'edit', 'update']]
 // Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
